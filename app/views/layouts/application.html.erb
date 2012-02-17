@@ -15,10 +15,11 @@
 <body>
 
 <% flash.each do |key, value| %>
-    <div class='flash' id='<%= key %>'>
+    <div class='flash' id='<%= key %>'></h1>
         <%= value %>
     </div>
 <% end %>
+<h1><%= link_to "Ticketee", root_path %>
 <%= yield %>
 
 </body>
